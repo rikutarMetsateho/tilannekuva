@@ -35,15 +35,6 @@ case 'Puutuoteteollisuus':
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
-                    break;
-default:
-                    return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(33,139,238,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
                     break;}};
 
 var style_Tehtaat_4 = function(feature, resolution){

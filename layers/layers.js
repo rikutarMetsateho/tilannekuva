@@ -23,7 +23,7 @@ var lyr_Valtatiet_1 = new ol.layer.Vector({
                 source:jsonSource_Valtatiet_1, 
                 style: style_Valtatiet_1,
                 popuplayertitle: 'Valtatiet',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Valtatiet_1.png" /> Valtatiet'
             });
 var format_TENT_2 = new ol.format.GeoJSON();
@@ -38,7 +38,7 @@ var lyr_TENT_2 = new ol.layer.Vector({
                 source:jsonSource_TENT_2, 
                 style: style_TENT_2,
                 popuplayertitle: 'TEN-T ',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/TENT_2.png" /> TEN-T '
             });
 var format_Latauspaikat_3 = new ol.format.GeoJSON();
@@ -75,8 +75,7 @@ var lyr_Tehtaat_4 = new ol.layer.Vector({
                 interactive: true,
     title: 'Tehtaat<br />\
     <img src="styles/legend/Tehtaat_4_0.png" /> Massateollisuus<br />\
-    <img src="styles/legend/Tehtaat_4_1.png" /> Puutuoteteollisuus<br />\
-    <img src="styles/legend/Tehtaat_4_2.png" /> <br />' });
+    <img src="styles/legend/Tehtaat_4_1.png" /> Puutuoteteollisuus<br />' });
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_Valtatiet_1.setVisible(true);lyr_TENT_2.setVisible(true);lyr_Latauspaikat_3.setVisible(true);lyr_Tehtaat_4.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_Valtatiet_1,lyr_TENT_2,lyr_Latauspaikat_3,lyr_Tehtaat_4];
@@ -88,10 +87,10 @@ lyr_Valtatiet_1.set('fieldImages', {'fid': 'TextEdit', 'primaryindex': 'TextEdit
 lyr_TENT_2.set('fieldImages', {'primaryind': 'TextEdit', 'KUNTAKOODI': 'TextEdit', 'EURTIENRO': 'TextEdit', 'ID': 'TextEdit', 'ALKU_M': 'TextEdit', 'LOPPU_M': 'TextEdit', 'MUOKKAUSPV': 'TextEdit', 'LINK_ID': 'TextEdit', });
 lyr_Latauspaikat_3.set('fieldImages', {'fid': 'TextEdit', 'Yritys': 'TextEdit', 'Nimi': 'TextEdit', 'Käyttövoima': 'TextEdit', 'Kapasiteetti': 'TextEdit', 'Teho kW': 'TextEdit', 'SijaintiN': 'TextEdit', 'SijaintiE': 'TextEdit', 'Tilanne': 'TextEdit', 'Lisätietoja': 'TextEdit', 'Linkki': 'TextEdit', 'Osoite': 'TextEdit', });
 lyr_Tehtaat_4.set('fieldImages', {'nro2015': 'Range', 'NETRS': 'TextEdit', 'IETRS': 'TextEdit', 'Tuotantolaitos': 'TextEdit', 'Tuotsuunta': 'TextEdit', 'Firma': 'TextEdit', 'Tehdas': 'TextEdit', 'Tyyppi': 'TextEdit', 'Maakunta': 'TextEdit', 'ELY-keskus': 'TextEdit', });
-lyr_Valtatiet_1.set('fieldLabels', {'fid': 'no label', 'primaryindex': 'no label', 'LINK_ID': 'no label', 'LINK_MMLID': 'no label', 'KUNTAKOODI': 'no label', 'HALLINN_LK': 'no label', 'TOIMINN_LK': 'no label', 'LINKKITYYP': 'no label', 'TIENUMERO': 'no label', 'TIEOSANRO': 'no label', 'AJORATA': 'no label', 'AET': 'no label', 'LET': 'no label', 'SILTA_ALIK': 'no label', 'AJOSUUNTA': 'no label', 'TIENIMI_SU': 'no label', 'TIENIMI_RU': 'no label', 'TIENIM_PSA': 'no label', 'TIENIM_KSA': 'no label', 'TIENIM_ISA': 'no label', 'ENS_TALO_O': 'no label', 'ENS_TALO_V': 'no label', 'VIIM_TAL_O': 'no label', 'VIIM_TAL_V': 'no label', 'MUOKKAUSPV': 'no label', 'SIJ_TARK': 'no label', 'KOR_TARK': 'no label', 'ALKU_PAALU': 'no label', 'LOPP_PAALU': 'no label', 'GEOM_FLIP': 'no label', 'LINK_TILA': 'no label', 'GEOM_LAHDE': 'no label', 'MTK_TIE_LK': 'no label', 'TIEN_KASVU': 'no label', });
-lyr_TENT_2.set('fieldLabels', {'primaryind': 'no label', 'KUNTAKOODI': 'no label', 'EURTIENRO': 'no label', 'ID': 'no label', 'ALKU_M': 'no label', 'LOPPU_M': 'no label', 'MUOKKAUSPV': 'no label', 'LINK_ID': 'no label', });
-lyr_Latauspaikat_3.set('fieldLabels', {'fid': 'no label', 'Yritys': 'inline label - always visible', 'Nimi': 'inline label - always visible', 'Käyttövoima': 'inline label - always visible', 'Kapasiteetti': 'inline label - always visible', 'Teho kW': 'inline label - always visible', 'SijaintiN': 'hidden field', 'SijaintiE': 'hidden field', 'Tilanne': 'inline label - always visible', 'Lisätietoja': 'hidden field', 'Linkki': 'hidden field', 'Osoite': 'inline label - always visible', });
-lyr_Tehtaat_4.set('fieldLabels', {'nro2015': 'hidden field', 'NETRS': 'hidden field', 'IETRS': 'hidden field', 'Tuotantolaitos': 'inline label - always visible', 'Tuotsuunta': 'inline label - always visible', 'Firma': 'inline label - always visible', 'Tehdas': 'inline label - always visible', 'Tyyppi': 'inline label - always visible', 'Maakunta': 'hidden field', 'ELY-keskus': 'hidden field', });
+lyr_Valtatiet_1.set('fieldLabels', {'fid': 'hidden field', 'primaryindex': 'hidden field', 'LINK_ID': 'hidden field', 'LINK_MMLID': 'hidden field', 'KUNTAKOODI': 'hidden field', 'HALLINN_LK': 'hidden field', 'TOIMINN_LK': 'hidden field', 'LINKKITYYP': 'hidden field', 'TIENUMERO': 'hidden field', 'TIEOSANRO': 'hidden field', 'AJORATA': 'hidden field', 'AET': 'hidden field', 'LET': 'hidden field', 'SILTA_ALIK': 'hidden field', 'AJOSUUNTA': 'hidden field', 'TIENIMI_SU': 'hidden field', 'TIENIMI_RU': 'hidden field', 'TIENIM_PSA': 'hidden field', 'TIENIM_KSA': 'hidden field', 'TIENIM_ISA': 'hidden field', 'ENS_TALO_O': 'hidden field', 'ENS_TALO_V': 'hidden field', 'VIIM_TAL_O': 'hidden field', 'VIIM_TAL_V': 'hidden field', 'MUOKKAUSPV': 'hidden field', 'SIJ_TARK': 'hidden field', 'KOR_TARK': 'hidden field', 'ALKU_PAALU': 'hidden field', 'LOPP_PAALU': 'hidden field', 'GEOM_FLIP': 'hidden field', 'LINK_TILA': 'hidden field', 'GEOM_LAHDE': 'hidden field', 'MTK_TIE_LK': 'hidden field', 'TIEN_KASVU': 'hidden field', });
+lyr_TENT_2.set('fieldLabels', {'primaryind': 'hidden field', 'KUNTAKOODI': 'hidden field', 'EURTIENRO': 'hidden field', 'ID': 'hidden field', 'ALKU_M': 'hidden field', 'LOPPU_M': 'hidden field', 'MUOKKAUSPV': 'hidden field', 'LINK_ID': 'hidden field', });
+lyr_Latauspaikat_3.set('fieldLabels', {'fid': 'hidden field', 'Yritys': 'inline label - always visible', 'Nimi': 'inline label - always visible', 'Käyttövoima': 'inline label - always visible', 'Kapasiteetti': 'inline label - always visible', 'Teho kW': 'inline label - always visible', 'SijaintiN': 'hidden field', 'SijaintiE': 'hidden field', 'Tilanne': 'inline label - always visible', 'Lisätietoja': 'hidden field', 'Linkki': 'hidden field', 'Osoite': 'hidden field', });
+lyr_Tehtaat_4.set('fieldLabels', {'nro2015': 'hidden field', 'NETRS': 'hidden field', 'IETRS': 'hidden field', 'Tuotantolaitos': 'hidden field', 'Tuotsuunta': 'hidden field', 'Firma': 'hidden field', 'Tehdas': 'hidden field', 'Tyyppi': 'inline label - always visible', 'Maakunta': 'hidden field', 'ELY-keskus': 'hidden field', });
 lyr_Tehtaat_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
