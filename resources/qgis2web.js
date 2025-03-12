@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-271257.824288, 7792001.461374, 6136025.850724, 11425963.912886], maxZoom: 28, minZoom: 1
+        extent: [1616657.350753, 8179516.320028, 4316925.539873, 9768399.882312], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-271257.824288, 7792001.461374, 6136025.850724, 11425963.912886], map.getSize());
+map.getView().fit([1616657.350753, 8179516.320028, 4316925.539873, 9768399.882312], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -451,7 +451,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (216 > 240) {
+        if (217 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -465,13 +465,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 7.3.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />+358 442766596<br />Tutkija<br />Metsäteho Oy';
+                linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 12.3.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />+358 442766596<br />Tutkija<br />Metsäteho Oy';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 7.3.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />+358 442766596<br />Tutkija<br />Metsäteho Oy';
+            linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 12.3.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />+358 442766596<br />Tutkija<br />Metsäteho Oy';
         }
 
         titleElement.appendChild(linkElement);
