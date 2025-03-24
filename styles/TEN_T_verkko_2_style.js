@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_TENT_2 = function(feature, resolution){
+var style_TEN_T_verkko_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -20,7 +20,7 @@ var style_TENT_2 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(227,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
+        stroke: new ol.style.Stroke({color: 'rgba(196,60,57,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

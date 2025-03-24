@@ -1,6 +1,6 @@
-var json_Tehtaat_3 = {
+var json_Tehtaat_4 = {
 "type": "FeatureCollection",
-"name": "Tehtaat_3",
+"name": "Tehtaat_4",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "nro2015": 5765.0, "NETRS": 6948063.855, "IETRS": 336976.817, "Tuotantolaitos": "Akonkosken saha, Töysä", "Tuotsuunta": "sahatavara", "Firma": "Akonkosken Saha Oy", "Tehdas": "Ähtärintie 23, 63600 TÖYSÄ", "Tyyppi": "Puutuoteteollisuus", "Maakunta": "Etelä-Pohjanmaa", "ELY-keskus": "Etelä-Pohjanmaa" }, "geometry": { "type": "Point", "coordinates": [ 23.821064685362082, 62.627130176359742 ] } },

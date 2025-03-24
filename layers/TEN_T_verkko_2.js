@@ -1,6 +1,6 @@
-var json_TENT_2 = {
+var json_TEN_T_verkko_2 = {
 "type": "FeatureCollection",
-"name": "TENT_2",
+"name": "TEN_T_verkko_2",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "primaryind": 1754.0, "KUNTAKOODI": 601.0, "EURTIENRO": "75", "ID": "46348813", "ALKU_M": 0.0, "LOPPU_M": 124.104, "MUOKKAUSPV": "12.08.2020 05:49:05", "LINK_ID": "1cf201a0-58fb-466e-bf16-226e2dc0bc16:1" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 25.59085957388054, 63.36282997109042 ], [ 25.590724338964844, 63.362945742766406 ], [ 25.590524664699942, 63.363134888872686 ], [ 25.590214617327266, 63.363428884744536 ], [ 25.589930774537581, 63.363700087308885 ], [ 25.589788897206635, 63.363834544328839 ] ] ] } },
