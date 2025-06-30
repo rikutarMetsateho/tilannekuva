@@ -6,7 +6,7 @@ function categories_Tehtaat_4(feature, value, size, resolution, labelText,
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'Massateollisuus':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.4 + size,
+        image: new ol.style.Circle({radius: 3.8500000000000005 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(151,232,58,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -15,7 +15,7 @@ function categories_Tehtaat_4(feature, value, size, resolution, labelText,
                     break;
 case 'Puutuoteteollisuus':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 4.4 + size,
+        image: new ol.style.Circle({radius: 3.8500000000000005 + size,
             displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
@@ -29,7 +29,8 @@ var style_Tehtaat_4 = function(feature, resolution){
         variables: {}
     };
     
-    var labelText = ""; var value = feature.get("Tyyppi");
+    var labelText = ""; 
+    var value = feature.get("Tyyppi");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
