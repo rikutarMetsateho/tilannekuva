@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-442295.841826, 7893657.120089, 5345838.441717, 11369326.964770], maxZoom: 28, minZoom: 1
+        extent: [337365.719341, 8007315.252208, 5588690.187803, 11366890.093753], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-442295.841826, 7893657.120089, 5345838.441717, 11369326.964770], map.getSize());
+map.getView().fit([337365.719341, 8007315.252208, 5588690.187803, 11366890.093753], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -449,7 +449,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Raskaan liikenteen latausinfran tilannekuva</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Raskaan liikenteen jakeluinfran tilannekuva</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
@@ -466,7 +466,7 @@ var Abstract = new ol.control.Control({
 
         var linkElement = document.createElement('a');
 
-        if (202 > 240) {
+        if (12 > 240) {
             linkElement.setAttribute("onmouseenter", "showAbstract()");
             linkElement.setAttribute("onmouseleave", "hideAbstract()");
             linkElement.innerHTML = 'i';
@@ -480,13 +480,13 @@ var Abstract = new ol.control.Control({
             window.showAbstract = function() {
                 linkElement.classList.remove("project-abstract");
                 linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 30.6.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />Tutkija<br />Metsäteho Oy';
+                linkElement.innerHTML = 'Metsäteho Oy';
             }
 
             hideAbstract();
         } else {
             linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Metsäteho Oy:n ylläpitämä raskaan liikenteen vaihtoehtoisten käyttövoimien infrastruktuurin tilannekuva<br />Päivitetty 30.6.2025<br /><br />Yhteystiedot<br />Riku Tarvainen<br />riku.tarvainen@metsateho.fi<br />Tutkija<br />Metsäteho Oy';
+            linkElement.innerHTML = 'Metsäteho Oy';
         }
 
         titleElement.appendChild(linkElement);
