@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [176927.238716, 8004908.088039, 5794218.745849, 10973371.217074], maxZoom: 28, minZoom: 1
+        extent: [150568.834993, 8009481.439238, 5778094.714173, 10987628.350809], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([176927.238716, 8004908.088039, 5794218.745849, 10973371.217074], map.getSize());
+map.getView().fit([150568.834993, 8009481.439238, 5778094.714173, 10987628.350809], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -498,7 +498,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Raskaan liikenteen jakeluinfran tilannekuva</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">LUONNOS jakeluinfrakartta</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
