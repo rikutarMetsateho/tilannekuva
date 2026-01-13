@@ -1,6 +1,6 @@
-var json_HVO_4 = {
+var json_HVOtoiminnassa_4 = {
 "type": "FeatureCollection",
-"name": "HVO_4",
+"name": "HVOtoiminnassa_4",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Yritys": "Neste", "Nimi": "Neste Truck Rovaniemi Alakorkalontie", "Käyttövoima": "HVO", "Teho kW": "", "SijaintiN": "7374736.058", "SijaintiE": "440191.902", "Tilanne": "Toiminnassa", "Kunta": "Rovaniemi", "Lisätietoja1": "", "Lisätietoja2": "", "Linkki": "https://asemat.neste.fi/", "Osoite": "Alakorkalontie 22, Rovaniemi" }, "geometry": { "type": "Point", "coordinates": [ 25.656548810559507, 66.486092981264775 ] } },
