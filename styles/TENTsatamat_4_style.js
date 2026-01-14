@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_satamat_4 = function(feature, resolution){
+var style_TENTsatamat_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
