@@ -28,7 +28,7 @@ var style_LBGsuunnitteilla_5 = function(feature, resolution){
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/LBG_punainen.svg"
+                  src: "styles/LBG_blu.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
