@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_TENTsatamat_3 = function(feature, resolution){
+var style_LBGsuunnitteilla_5 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -22,13 +22,13 @@ var style_TENTsatamat_3 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Icon({
-                  imgSize: [579.997, 579.997],
-                  scale: 0.0327587901316731,
-                  anchor: [289.9985, 289.9985],
+                  imgSize: [1024, 1024],
+                  scale: 0.0185546875,
+                  anchor: [512.0, 512.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/amenity=ferry_terminal.svg"
+                  src: "styles/LBG_blu.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

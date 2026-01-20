@@ -1,6 +1,6 @@
-var json_Shktoiminnassa_10 = {
+var json_Shktoiminnassa_9 = {
 "type": "FeatureCollection",
-"name": "Shktoiminnassa_10",
+"name": "Shktoiminnassa_9",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "14", "Yritys": "Liikenneasema Mäkipeura / Plugit Finland Oy /", "Nimi": "Liikenneasema Mäkipeura", "Käyttövoima": "Sähkö", "Teho kW": "max 560 kW", "SijaintiN": "7339252.6", "SijaintiE": "414652.3", "Tilanne": "Toiminnassa", "Kunta": "Tervola ", "Lisätietoja1": "2* 40 m pitkä, tulevaisuudessa MW-lataus", "Linkki": "https://makipeura.fi/lataus/", "Osoite": "Nelostie 3079, Tervola", "field_12": null }, "geometry": { "type": "Point", "coordinates": [ 25.107296930531351, 66.161962349340399 ] } },

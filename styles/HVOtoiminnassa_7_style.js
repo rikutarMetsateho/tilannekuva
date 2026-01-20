@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_LBGsuunnitteilla_7 = function(feature, resolution){
+var style_HVOtoiminnassa_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -28,7 +28,7 @@ var style_LBGsuunnitteilla_7 = function(feature, resolution){
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/LBG_blu.svg"
+                  src: "styles/HVO_keltainen.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

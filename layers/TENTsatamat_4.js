@@ -1,6 +1,6 @@
-var json_TENTsatamat_3 = {
+var json_TENTsatamat_4 = {
 "type": "FeatureCollection",
-"name": "TENTsatamat_3",
+"name": "TENTsatamat_4",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "TEN-T-satama": "Tornio Röyttä", "Ydin/kattava": "Kattava verkko", "Kunta": "Tornio", "SijaintiN": "7295557.8", "SijaintiE": "369967.6", "Lähde": "https://lvm.fi/o/yja-generic-portlet/yja-api/vahva/documents/6533547", "Muuta": "Punaisella ne, joita ei mainita puuhuollon excel- taulukossa" }, "geometry": { "type": "Point", "coordinates": [ 24.161413215447251, 65.755160885795988 ] } },

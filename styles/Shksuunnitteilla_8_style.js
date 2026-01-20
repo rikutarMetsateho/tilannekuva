@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Shktoiminnassa_10 = function(feature, resolution){
+var style_Shksuunnitteilla_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -74,7 +74,7 @@ var style_Shktoiminnassa_10 = function(feature, resolution){
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/sahko_black.svg"
+                  src: "styles/sahko_blue.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

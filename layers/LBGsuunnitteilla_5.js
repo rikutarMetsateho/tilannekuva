@@ -1,6 +1,6 @@
-var json_LBGsuunnitteilla_7 = {
+var json_LBGsuunnitteilla_5 = {
 "type": "FeatureCollection",
-"name": "LBGsuunnitteilla_7",
+"name": "LBGsuunnitteilla_5",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "1", "Yritys": "Ab Jan-Ove Management Oy", "Nimi": "Biokaasua Suomi LBG Karleby", "Käyttövoima": "LBG", "Teho kW": "", "SijaintiN": "7086053", "SijaintiE": "306262", "Tilanne": "Suunnitteilla", "Kunta": "Kokkola", "Lisätietoja1": "EV tukipäätös 2025", "Linkki": "", "Osoite": "Silverstenbuktsvägen, Kokkola" }, "geometry": { "type": "Point", "coordinates": [ 23.058558834700847, 63.847924723265862 ] } },

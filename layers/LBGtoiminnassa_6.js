@@ -1,6 +1,6 @@
-var json_LBGtoiminnassa_8 = {
+var json_LBGtoiminnassa_6 = {
 "type": "FeatureCollection",
-"name": "LBGtoiminnassa_8",
+"name": "LBGtoiminnassa_6",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "1", "Yritys": "BIG-Biokaasu", "Nimi": "Nokia, Koukkujärvi", "Käyttövoima": "LBG", "Teho kW": "", "SijaintiN": "6824531.583", "SijaintiE": "314572.771", "Tilanne": "Toiminnassa", "Kunta": "Nokia", "Lisätietoja1": "", "Linkki": "https://big.fi/tankkausasemat/ ", "Osoite": "Testiradantie 10, Tampere" }, "geometry": { "type": "Point", "coordinates": [ 23.514460178469609, 61.509790024270586 ] } },
