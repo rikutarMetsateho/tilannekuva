@@ -1,6 +1,6 @@
-var json_Shktoiminnassa_10 = {
+var json_Shktoiminnassa_11 = {
 "type": "FeatureCollection",
-"name": "Shktoiminnassa_10",
+"name": "Shktoiminnassa_11",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "1", "Yritys": "Allego Charging Oy", "Nimi": "Putaanportintie 7", "Käyttövoima": "Sähkö", "SijaintiN": "7027168.264", "SijaintiE": "429495.671", "Tilanne": "Suunnitteilla", "Kunta": "Pihtipudas ", "Lisätietoja1": "EV tukipäätös 2024", "Lisätietoja2": "Pisteiden määrä 4, Teho vähintään 350 kW", "Linkki": "", "Osoite": null }, "geometry": { "type": "Point", "coordinates": [ 25.590307312091927, 63.366215226910377 ] } },

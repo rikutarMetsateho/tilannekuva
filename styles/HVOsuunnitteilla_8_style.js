@@ -28,7 +28,7 @@ var style_HVOsuunnitteilla_8 = function(feature, resolution){
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/HVO_keltainen.svg"
+                  src: "styles/HVO_sin.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,

@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Shksuunnitteilla_9 = function(feature, resolution){
+var style_Shksuunnitteilla_10 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

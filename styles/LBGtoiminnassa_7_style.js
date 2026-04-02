@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_LBGtoiminnassa_6 = function(feature, resolution){
+var style_LBGtoiminnassa_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

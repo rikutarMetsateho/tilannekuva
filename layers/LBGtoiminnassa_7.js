@@ -1,6 +1,6 @@
-var json_LBGtoiminnassa_6 = {
+var json_LBGtoiminnassa_7 = {
 "type": "FeatureCollection",
-"name": "LBGtoiminnassa_6",
+"name": "LBGtoiminnassa_7",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "1", "Yritys": "BIG-Biokaasu", "Nimi": "Imatra, Vuoksenniska", "Käyttövoima": "LBG", "SijaintiN": "6789108.935", "SijaintiE": "598961.123", "Tilanne": "Toiminnassa", "Kunta": "Imatra", "Lisätietoja1": "", "Lisätietoja2": "", "Linkki": "https://big.fi/tankkausasemat/ ", "Osoite": "Sauramonkuja 5-7, Imatra" }, "geometry": { "type": "Point", "coordinates": [ 28.842852958563117, 61.223783711242987 ] } },

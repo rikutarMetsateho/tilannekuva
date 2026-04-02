@@ -1,6 +1,6 @@
-var json_Vetysuunnitteilla_4 = {
+var json_Vetysuunnitteilla_5 = {
 "type": "FeatureCollection",
-"name": "Vetysuunnitteilla_4",
+"name": "Vetysuunnitteilla_5",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "fid": "1", "Yritys": "Energiequelle", "Nimi": "Oulu Green Hydrogen Park", "Käyttövoima": "Vety", "SijaintiN": "7216292.069", "SijaintiE": "435787.136", "Tilanne": "Suunnitteilla ", "Kunta": "Oulu", "Lisätietoja1": "Suunnitteluvaraus alueesta", "Lisätietoja2": "", "Linkki": "", "Osoite": "Pyyryväisen suurteollisuusalue" }, "geometry": { "type": "Point", "coordinates": [ 25.634952735644855, 65.064099806640527 ] } },

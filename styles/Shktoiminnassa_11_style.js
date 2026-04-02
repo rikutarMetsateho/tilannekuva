@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Shktoiminnassa_10 = function(feature, resolution){
+var style_Shktoiminnassa_11 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
