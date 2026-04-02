@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-72890.580284, 7993898.675081, 5779961.971233, 11114496.758875], maxZoom: 28, minZoom: 1
+        extent: [53509.864222, 7953669.249194, 5915560.880912, 11123101.388534], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-72890.580284, 7993898.675081, 5779961.971233, 11114496.758875], map.getSize());
+map.getView().fit([53509.864222, 7953669.249194, 5915560.880912, 11123101.388534], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -498,7 +498,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">LUONNOS jakeluinfrakartta</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Raskaan kuorma-autoliikenteen jakeluinfran tilannekuva</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
@@ -506,44 +506,6 @@ var Title = new ol.control.Control({
 map.addControl(Title)
     
 //abstract
-
-var Abstract = new ol.control.Control({
-    element: (() => {
-        var titleElement = document.createElement('div');
-        titleElement.className = 'bottom-right-abstract ol-control';
-        titleElement.id = 'abstract';
-
-        var linkElement = document.createElement('a');
-
-        if (110 > 240) {
-            linkElement.setAttribute("onmouseenter", "showAbstract()");
-            linkElement.setAttribute("onmouseleave", "hideAbstract()");
-            linkElement.innerHTML = 'i';
-
-            window.hideAbstract = function() {
-                linkElement.classList.add("project-abstract");
-                linkElement.classList.remove("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'i';
-            }
-
-            window.showAbstract = function() {
-                linkElement.classList.remove("project-abstract");
-                linkElement.classList.add("project-abstract-uncollapsed");
-                linkElement.innerHTML = 'Raskaan liikenteen jakeluinfrakartta<br />Riku Tarvainen<br />Tutkija<br />riku.tarvainen@metsateho.fi<br />044276659<br />Metsäteho Oy';
-            }
-
-            hideAbstract();
-        } else {
-            linkElement.classList.add("project-abstract-uncollapsed");
-            linkElement.innerHTML = 'Raskaan liikenteen jakeluinfrakartta<br />Riku Tarvainen<br />Tutkija<br />riku.tarvainen@metsateho.fi<br />044276659<br />Metsäteho Oy';
-        }
-
-        titleElement.appendChild(linkElement);
-        return titleElement;
-    })(),
-    target: 'bottom-right-container'
-});
-map.addControl(Abstract);
 
 
 //geolocate

@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_LBGtoiminnassa_8 = function(feature, resolution){
+var style_Vetysuunnitteilla_4 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -22,13 +22,13 @@ var style_LBGtoiminnassa_8 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Icon({
-                  imgSize: [1024, 1024],
-                  scale: 0.0185546875,
-                  anchor: [512.0, 512.0],
+                  imgSize: [157, 288],
+                  scale: 0.044585987261146494,
+                  anchor: [78.5, 144.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/LBG_black.svg"
+                  src: "styles/vety_blue.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
