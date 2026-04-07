@@ -507,6 +507,44 @@ map.addControl(Title)
     
 //abstract
 
+var Abstract = new ol.control.Control({
+    element: (() => {
+        var titleElement = document.createElement('div');
+        titleElement.className = 'bottom-right-abstract ol-control';
+        titleElement.id = 'abstract';
+
+        var linkElement = document.createElement('a');
+
+        if (90 > 240) {
+            linkElement.setAttribute("onmouseenter", "showAbstract()");
+            linkElement.setAttribute("onmouseleave", "hideAbstract()");
+            linkElement.innerHTML = 'i';
+
+            window.hideAbstract = function() {
+                linkElement.classList.add("project-abstract");
+                linkElement.classList.remove("project-abstract-uncollapsed");
+                linkElement.innerHTML = 'i';
+            }
+
+            window.showAbstract = function() {
+                linkElement.classList.remove("project-abstract");
+                linkElement.classList.add("project-abstract-uncollapsed");
+                linkElement.innerHTML = 'Selitteen lisätiedot:<br /><br />* Rajoitettu käyttö<br />** Väliaikaisesti poissa käytöstä<br /><br />Metsäteho Oy';
+            }
+
+            hideAbstract();
+        } else {
+            linkElement.classList.add("project-abstract-uncollapsed");
+            linkElement.innerHTML = 'Selitteen lisätiedot:<br /><br />* Rajoitettu käyttö<br />** Väliaikaisesti poissa käytöstä<br /><br />Metsäteho Oy';
+        }
+
+        titleElement.appendChild(linkElement);
+        return titleElement;
+    })(),
+    target: 'bottom-right-container'
+});
+map.addControl(Abstract);
+
 
 //geolocate
 
