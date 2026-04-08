@@ -4,12 +4,12 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [-84236.018782, 7999152.421686, 6060835.382236, 11305641.478983], maxZoom: 28, minZoom: 1
+        extent: [921212.640520, 8022484.593970, 5962649.491478, 10851954.414376], maxZoom: 28, minZoom: 1
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-84236.018782, 7999152.421686, 6060835.382236, 11305641.478983], map.getSize());
+map.getView().fit([921212.640520, 8022484.593970, 5962649.491478, 10851954.414376], map.getSize());
 
 //full zooms only
 map.getView().setProperties({constrainResolution: true});
@@ -510,7 +510,7 @@ map.addControl(Title)
 var Abstract = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
-        titleElement.className = 'bottom-right-abstract ol-control';
+        titleElement.className = 'bottom-left-abstract ol-control';
         titleElement.id = 'abstract';
 
         var linkElement = document.createElement('a');
@@ -541,7 +541,7 @@ var Abstract = new ol.control.Control({
         titleElement.appendChild(linkElement);
         return titleElement;
     })(),
-    target: 'bottom-right-container'
+    target: 'bottom-left-container'
 });
 map.addControl(Abstract);
 

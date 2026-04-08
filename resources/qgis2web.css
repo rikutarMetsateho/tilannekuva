@@ -191,16 +191,16 @@ td video {
 }
 
 #abstract {
-    max-width: 100%;
+    max-width: 80%;
 }
 .ol-touch #abstract {
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .project-abstract {
     font: bold 22px 'Lucida Console', Monaco, monospace;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -214,7 +214,7 @@ td video {
     display: block;
     padding: 3px;
     cursor: default;
-    margin: 3px;
+    margin: 1px;
 }
 
 
