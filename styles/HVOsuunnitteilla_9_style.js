@@ -13,9 +13,11 @@ var style_HVOsuunnitteilla_9 = function(feature, resolution){
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
-    var textAlign = "left";
-    var offsetX = 0;
-    var offsetY = 0;
+    var textAlign = 'left';
+    var offsetX = 8;
+    var offsetY = 3;
+    var overflow = false;
+    var repeat = 0;
     var placement = 'point';
     if ("" !== null) {
         labelText = String("");
@@ -28,11 +30,11 @@ var style_HVOsuunnitteilla_9 = function(feature, resolution){
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/HVO_keltainen.svg"
+                  src: "styles/HVO_sin.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
-                              bufferWidth)
+                              bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
     })];
 
     return style;

@@ -4,15 +4,15 @@ var map = new ol.Map({
     renderer: 'canvas',
     layers: layersList,
     view: new ol.View({
-        extent: [921212.640520, 8022484.593970, 5962649.491478, 10851954.414376], maxZoom: 28, minZoom: 1
+        constrainResolution: false,
+        maxZoom: 28,
+        minZoom: 1,
+        extent: [-164597.077132, 7923753.383525, 5459953.368965, 11675698.351978],
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([921212.640520, 8022484.593970, 5962649.491478, 10851954.414376], map.getSize());
-
-//full zooms only
-map.getView().setProperties({constrainResolution: true});
+map.getView().fit([-164597.077132, 7923753.383525, 5459953.368965, 11675698.351978], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {
@@ -153,7 +153,10 @@ var doHover = false;
 function createPopupField(currentFeature, currentFeatureKeys, layer) {
     var popupText = '';
     for (var i = 0; i < currentFeatureKeys.length; i++) {
-        if (currentFeatureKeys[i] != 'geometry' && currentFeatureKeys[i] != 'layerObject' && currentFeatureKeys[i] != 'idO') {
+        if (currentFeatureKeys[i] != 'geometry' &&
+            currentFeatureKeys[i] != 'layerObject' &&
+            currentFeatureKeys[i] != 'idO' &&
+            currentFeatureKeys[i] != '_mvtLayer_') {
             var popupField = '';
             if (layer.get('fieldLabels')[currentFeatureKeys[i]] == "hidden field") {
                 continue;
@@ -498,7 +501,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Raskaan kuorma-autoliikenteen jakeluinfran tilannekuva</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Kaikkien toimialojen tilannekuva</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'
@@ -597,16 +600,19 @@ var bottomAttribution = new ol.control.Attribution({
 });
 map.addControl(bottomAttribution);
 
-var attributionList = document.createElement('li');
-attributionList.innerHTML = `
-	<a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
-	<a href="https://openlayers.org/">OpenLayers</a> &middot;
-	<a href="https://qgis.org/">QGIS</a>	
-`;
-var bottomAttributionUl = bottomAttribution.element.querySelector('ul');
-if (bottomAttributionUl) {
-  bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
-}
+map.once('rendercomplete', function() {
+  var bottomAttributionUl = bottomAttribution.element.querySelector('ul');
+  if (bottomAttributionUl) {
+    var layerAttrs = Array.from(bottomAttributionUl.querySelectorAll('li'))
+      .map(function(li) { return li.innerHTML.trim(); }).filter(Boolean);
+    var attribHtml = `
+    <a href="https://github.com/qgis2web/qgis2web">qgis2web</a> &middot;
+    <a href="https://openlayers.org/">OpenLayers</a> &middot;
+    <a href="https://qgis.org/">QGIS</a>`;
+    if (layerAttrs.length > 0) { attribHtml += ' &nbsp;|&nbsp; ' + layerAttrs.join(', '); }
+    bottomAttributionUl.innerHTML = '<li>' + attribHtml + '</li>';
+  }
+});
 
 
 // Disable "popup on hover" or "highlight on hover" if ol-control mouseover
