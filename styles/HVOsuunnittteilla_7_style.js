@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_HCTkytvtkantatietmets_3 = function(feature, resolution){
+var style_HVOsuunnittteilla_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -18,12 +18,20 @@ var style_HCTkytvtkantatietmets_3 = function(feature, resolution){
     var offsetY = 3;
     var overflow = false;
     var repeat = 0;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(51,160,44,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
+        image: new ol.style.Icon({
+                  imgSize: [1024, 1024],
+                  scale: 0.0146484375,
+                  anchor: [512.0, 512.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/HVO_sin.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

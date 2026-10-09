@@ -7,12 +7,12 @@ var map = new ol.Map({
         constrainResolution: false,
         maxZoom: 28,
         minZoom: 1,
-        extent: [-164597.077132, 7923753.383525, 5459953.368965, 11675698.351978],
+        extent: [-568258.685588, 7740574.006745, 5532794.540825, 11500932.115446],
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-164597.077132, 7923753.383525, 5459953.368965, 11675698.351978], map.getSize());
+map.getView().fit([-568258.685588, 7740574.006745, 5532794.540825, 11500932.115446], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {
@@ -501,7 +501,7 @@ var Title = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
         titleElement.className = 'top-right-title ol-control';
-        titleElement.innerHTML = '<h2 class="project-title">Kaikkien toimialojen tilannekuva</h2>';
+        titleElement.innerHTML = '<h2 class="project-title">Raskaan kuorma-autoliikenteen jakeluinfran tilannekuva</h2>';
         return titleElement;
     })(),
     target: 'top-right-container'

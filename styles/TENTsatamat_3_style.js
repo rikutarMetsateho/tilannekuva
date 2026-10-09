@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_HCTkytvtkantatietmetalli_4 = function(feature, resolution){
+var style_TENTsatamat_3 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -18,12 +18,20 @@ var style_HCTkytvtkantatietmetalli_4 = function(feature, resolution){
     var offsetY = 3;
     var overflow = false;
     var repeat = 0;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.508}),
+        image: new ol.style.Icon({
+                  imgSize: [579.997, 579.997],
+                  scale: 0.0327587901316731,
+                  anchor: [289.9985, 289.9985],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/amenity=ferry_terminal.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)
