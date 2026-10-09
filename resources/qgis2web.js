@@ -513,7 +513,7 @@ map.addControl(Title)
 var Abstract = new ol.control.Control({
     element: (() => {
         var titleElement = document.createElement('div');
-        titleElement.className = 'bottom-left-abstract ol-control';
+        titleElement.className = 'bottom-right-abstract ol-control';
         titleElement.id = 'abstract';
 
         var linkElement = document.createElement('a');
@@ -544,7 +544,7 @@ var Abstract = new ol.control.Control({
         titleElement.appendChild(linkElement);
         return titleElement;
     })(),
-    target: 'bottom-left-container'
+    target: 'bottom-right-container'
 });
 map.addControl(Abstract);
 
