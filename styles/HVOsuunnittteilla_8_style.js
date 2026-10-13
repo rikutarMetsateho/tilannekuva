@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_HVOsuunnittteilla_7 = function(feature, resolution){
+var style_HVOsuunnittteilla_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

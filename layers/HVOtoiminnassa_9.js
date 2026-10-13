@@ -1,6 +1,6 @@
-var json_HVOtoiminnassa_8 = {
+var json_HVOtoiminnassa_9 = {
 "type": "FeatureCollection",
-"name": "HVOtoiminnassa_8",
+"name": "HVOtoiminnassa_9",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Yritys": "ABC ", "Nimi": "ABC Forssa", "Käyttövoima": "HVO", "SijaintiN": "6748431", "SijaintiE": "313745.6", "Tilanne": "Toiminnassa", "Kunta": "Forssa ", "Lisätietoja1": "", "Lisätietoja2": "", "Linkki": "https://www.abcasemat.fi/asemat/abc-forssa-637859380", "Osoite": "Matkailijankatu 2, Forssa", "field_12": "" }, "geometry": { "type": "Point", "coordinates": [ 23.573811837794572, 60.827433787262073 ] } },

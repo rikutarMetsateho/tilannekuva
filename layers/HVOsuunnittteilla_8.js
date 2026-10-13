@@ -1,6 +1,6 @@
-var json_HVOsuunnittteilla_7 = {
+var json_HVOsuunnittteilla_8 = {
 "type": "FeatureCollection",
-"name": "HVOsuunnittteilla_7",
+"name": "HVOsuunnittteilla_8",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Yritys": "St1", "Nimi": "St1 Jämsä", "Käyttövoima": "HVO", "SijaintiN": "6858986.487", "SijaintiE": "403951.479", "Tilanne": "Suunnitteilla", "Kunta": "Jämsä", "Lisätietoja1": "Truck alle 34m", "Lisätietoja2": "", "Linkki": "", "Osoite": "Kauhkialantie 116, 42100 Jämsä" }, "geometry": { "type": "Point", "coordinates": [ 25.17492281830453, 61.851502000837499 ] } },

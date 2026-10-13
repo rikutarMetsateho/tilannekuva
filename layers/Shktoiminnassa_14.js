@@ -1,6 +1,6 @@
-var json_Shktoiminnassa_13 = {
+var json_Shktoiminnassa_14 = {
 "type": "FeatureCollection",
-"name": "Shktoiminnassa_13",
+"name": "Shktoiminnassa_14",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Yritys": "Ahola/Plugit Finland Oy", "Nimi": "Ahola Transport, Naantali julkinen", "Käyttövoima": "Sähkö", "SijaintiN": "6713671.941", "SijaintiE": "228818.16", "Tilanne": "Toiminnassa", "Kunta": "Naantali", "Lisätietoja1": "", "Lisätietoja2": "Pisteiden määrä 4, teho 360 kW", "Linkki": "plugit.com/charging-network/#map", "Osoite": "Lisenssikatu 10, Naantali" }, "geometry": { "type": "Point", "coordinates": [ 22.065249307783855, 60.467717724592703 ] } },

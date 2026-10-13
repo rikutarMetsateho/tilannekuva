@@ -7,12 +7,12 @@ var map = new ol.Map({
         constrainResolution: false,
         maxZoom: 28,
         minZoom: 1,
-        extent: [-568258.685588, 7740574.006745, 5532794.540825, 11500932.115446],
+        extent: [-279278.814277, 7804276.659560, 6349472.585083, 12108027.557918],
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-568258.685588, 7740574.006745, 5532794.540825, 11500932.115446], map.getSize());
+map.getView().fit([-279278.814277, 7804276.659560, 6349472.585083, 12108027.557918], map.getSize());
 
 //change cursor
 function pointerOnFeature(evt) {

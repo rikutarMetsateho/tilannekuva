@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Shkrajoitettu_11 = function(feature, resolution){
+var style_Vetysuunnitteilla_10 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -24,13 +24,13 @@ var style_Shkrajoitettu_11 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Icon({
-                  imgSize: [602, 602],
-                  scale: 0.024916943521594685,
-                  anchor: [301.0, 301.0],
+                  imgSize: [157, 288],
+                  scale: 0.044585987261146494,
+                  anchor: [78.5, 144.0],
                   anchorXUnits: "pixels",
                   anchorYUnits: "pixels",
                   rotation: 0.0,
-                  src: "styles/sahko_gray.svg"
+                  src: "styles/vety_blue.svg"
             }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
